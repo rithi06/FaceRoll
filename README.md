@@ -12,7 +12,7 @@ python download_models.py        # one-time, ~40 MB
 
 ## Use
 ```bash
-python enroll.py --roll 23CSD001 --name "Asha"    # SPACE x5 to capture, ESC cancels
+python enroll.py --roll 23CSE001 --name "Rithika"    # SPACE x5 to capture, ESC cancels
 python attendance.py                              # live recognition, q to quit
 python report.py --csv                            # today's report, saved to exports/
 python report.py --date 2026-10-24
@@ -32,7 +32,7 @@ python report.py --date 2026-10-24
 - Not recognising enrolled people -> re-enroll in the same lighting, lower the threshold slightly.
 - Wrong camera -> change `CAMERA_INDEX`.
 
-## Limitations (mention these in interviews)
+## Limitations 
 - No liveness detection: a printed photo or phone screen can fool it.
 - Accuracy drops in poor lighting or with heavy occlusion.
 - Brute-force matching is fine for hundreds of students; use FAISS beyond that.
